@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/mxemo/">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ProResume Editor</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles-R2JUTMK6.css">
+
+  <style>
+    :root {
+      --bg-main: #020617;
+      --bg-header: #0f172a;
+      --accent-color: #4f46e5;
+      --resume-bg: #ffffff;
+    }
+    html, body { 
+      height: 100%; 
+      margin: 0; 
+      background-color: var(--bg-main); 
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 font-sans antialiased h-screen overflow-hidden text-slate-200">
+  
+  <app-root>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <p>Loading Resume Editor...</p>
+    </div>
+  </app-root>
+
+  <script src="main-RC2A7RCD.js" type="module"></script>
+  <script>
+    window.onbeforeprint = () => {
+  document.body.classList.add('printing-mode');
+};
+window.onafterprint = () => {
+  document.body.classList.remove('printing-mode');
+};
+  </script>
+</body>
+</html>
